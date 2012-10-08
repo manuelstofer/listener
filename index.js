@@ -1,9 +1,9 @@
 "use strict";
 
 module.exports = function (node, event, fn) {
-    if (node.addEventListener) {
+    if (node.addEventListener || !node.attachEvent) {
         node.addEventListener(event, fn);
-    } else if (node.attachEvent) {
-        node.addEventListener(event, fn);
+    } else {
+        node.attachEvent('on' + event, fn);
     }
 };
