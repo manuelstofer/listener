@@ -1,0 +1,11 @@
+{
+  "name": "listener",
+  "description": "addEventListener with ie fallback",
+  "version": "0.1.0",
+  "keywords": [],
+  "dependencies": {},
+  "scripts": [
+    "index.js"
+  ],
+  "repo": "https://github.com/manuelstofer/listener"
+}
